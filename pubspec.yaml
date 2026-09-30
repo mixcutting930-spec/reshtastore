@@ -1,0 +1,83 @@
+name: nikah_app
+description: A new Flutter project for Nikah app.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase Packages (Fully Compatible Versions)
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.5.3
+  cloud_firestore: ^5.6.5
+
+  # Muzz Card Swiper Package
+  flutter_card_swiper: ^7.0.0
+
+  # Other Utilities & Assets
+  cupertino_icons: ^1.0.2
+  image_picker: ^1.1.2
+  google_sign_in: ^6.2.2
+  shared_preferences: ^2.3.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Recommended Lints & Tools
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.4
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+
+  # Assets section
+  assets:
+    - images/
+
+  # Custom Fonts section
+  fonts:
+    - family: Rubik Medium
+      fonts:
+        - asset: fonts/rubik_medium.ttf
+    - family: Rubik Regular
+      fonts:
+        - asset: fonts/rubik_regular.ttf
+
+# ============================================
+# APP ICON & SPLASH CONFIGURATIONS
+# ============================================
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "images/app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#FFFFFF" # White background
+  adaptive_icon_foreground: "images/app_icon.png"
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: "images/app_icon.jpg"
+  color_dark: "#2D3142"
+  image_dark: "images/app_icon.jpg"
+
+  android_12:
+    image: "images/app_icon.jpg"
+    icon_background_color: "#FFFFFF"
+    image_dark: "images/app_icon.jpg"
+    icon_background_color_dark: "#2D3142"
+
+  web: falsef
